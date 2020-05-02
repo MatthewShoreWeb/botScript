@@ -1,4 +1,4 @@
-let accountNumber = 1;
+let accountNumber = document.querySelector('#input').value = 1;
 let windowCount = 0;
 
 document.querySelector('#input').addEventListener('change', function () {
@@ -14,7 +14,11 @@ document.querySelector('#input').addEventListener('change', function () {
 // Recursively opens new tabs with a delay.
 function openLoop () {
     setTimeout(function () {
-        window.open('https://www.strongholdkingdoms.com/full_site.php');
+       // let win = window.open('https://www.strongholdkingdoms.com/full_site.php');
+     
+        var x = window.open('https://www.strongholdkingdoms.com/full_site.php');// open a blank tab;
+        x.document.write('<script>alert("I was Injected")</script>');
+      
         windowCount++;
         if (windowCount < accountNumber) {
             openLoop();
