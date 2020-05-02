@@ -10,18 +10,17 @@ function createAccount() {
 
     // Enter random information.
     document.querySelector('#txtEmail').value = email;
-    document.querySelector('#passwordfield').value = password;
-    document.querySelector('#passwordfield2').value = password;
+    document.querySelector('#txtPassword').value = password;
+    document.querySelector('#txtPasswordConfirm').value = password;
 
     // Accept the terms and conditions.
     document.querySelector('#termsCondtion').checked = true;
 
     // Create the account.
-    document.querySelector('#btnCreate').form.submit();
+    //document.querySelector('#btnCreate').form.submit();
 
     // setTimeout(function () {
     //     window.location.href = 'https://www.strongholdkingdoms.com/full_site.php';
     // }, 500);
 
 }
-
