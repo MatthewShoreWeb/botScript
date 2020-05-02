@@ -1,0 +1,23 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "Packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewShoreWeb/botScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewShoreWeb/botScript/issues"
+  },
+  "homepage": "https://github.com/MatthewShoreWeb/botScript#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -17,6 +17,10 @@ function createAccount() {
     // Accept the terms and conditions.
     document.querySelector('#termsCondtion').checked = true;
 
+    let request = new XMLHttpRequest();
+
     // Create the account.
-    //document.querySelector('#btnCreate').form.submit();
+    setTimeout(function () {
+        document.querySelector('#btnCreate').form.submit();
+    }, 500)
 }
