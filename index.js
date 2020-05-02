@@ -13,11 +13,8 @@ document.querySelector('#input').addEventListener('change', function () {
 
 // Recursively opens new tabs with a delay.
 function openLoop () {
-    setTimeout(function () {
-       // let win = window.open('https://www.strongholdkingdoms.com/full_site.php');
-     
-        var x = window.open('https://www.strongholdkingdoms.com/full_site.php');// open a blank tab;
-        x.document.write('<script>alert("I was Injected")</script>');
+    setTimeout(function () {     
+        window.open('https://www.strongholdkingdoms.com/full_site.php');// open a blank tab;
       
         windowCount++;
         if (windowCount < accountNumber) {
