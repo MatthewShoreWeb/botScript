@@ -12,7 +12,7 @@ let password = function () {
     return randomString(0, 8);
 };
 
-document.querySelector('#txtEmail').getAttribute('value') = email;
+document.querySelector('#txtEmail').value = email;
 
-document.querySelector('#passwordfield').getAttribute('value') = password;
-document.querySelector('#passwordfield2').getAttribute('value') = password;
+document.querySelector('#passwordfield').value = password;
+document.querySelector('#passwordfield2').value = password;
