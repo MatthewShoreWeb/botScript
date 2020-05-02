@@ -14,7 +14,7 @@ document.querySelector('#input').addEventListener('change', function () {
 // Recursively opens new tabs with a delay.
 function openLoop () {
     setTimeout(function () {     
-        window.open('https://www.strongholdkingdoms.com/full_site.php');// open a blank tab;
+        window.open('https://www.strongholdkingdoms.com/full_site.php');
       
         windowCount++;
         if (windowCount < accountNumber) {
