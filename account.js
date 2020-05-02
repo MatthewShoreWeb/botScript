@@ -18,9 +18,4 @@ function createAccount() {
 
     // Create the account.
     //document.querySelector('#btnCreate').form.submit();
-
-    // setTimeout(function () {
-    //     window.location.href = 'https://www.strongholdkingdoms.com/full_site.php';
-    // }, 500);
-
 }
