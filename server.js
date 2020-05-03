@@ -3,17 +3,17 @@ const url = require('url');
 const fs = require('fs');
 
 
+
+
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  console.log(url.parse(req.url,true).query);
-  fs.appendFile('email.txt', url.parse(req.url,true).query.email + ' ' + url.parse(req.url,true).query.password + '\n', function (err) {
-  
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+
+    // fs.appendFile('email.txt', url.parse(req.url, true).query.email + ' ' + url.parse(req.url, true).query.password + '\n', function (err) {
+    //     if (err) { 
+    //         res.statusCode = 404; 
+    //     }
+    // });
 });
-  res.end();
-});
 
-
-
-
-server.listen(8000);
+server.listen(8000, console.log('Server Running @ http://localhost:8000/.'));
